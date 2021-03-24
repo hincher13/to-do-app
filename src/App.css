@@ -1,0 +1,12 @@
+.jumbotron {
+    margin: 0;
+    padding: 25px;
+    /* background-image: linear-gradient(to right, #F5F5F5, #C94141, #C92E2E); */
+    /* color: red; */
+    border-radius: 0;
+    height: 20vh;
+  }
+  .navbar-dark {
+    /* background-color: #C92E2E; */
+    height: 10vph;
+  }
