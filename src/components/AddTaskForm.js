@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Modal, ModalHeader, ModalBody, Label, Form, FormGroup, Input } from "reactstrap";
+
 class AddTaskForm extends Component {
     constructor(props) {
         super(props);
@@ -12,6 +13,7 @@ class AddTaskForm extends Component {
         this.toggleModal = this.toggleModal.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+     
     }
     toggleModal() {
         this.setState({
@@ -25,12 +27,15 @@ class AddTaskForm extends Component {
         this.setState({
             [name]: value
         });
+        console.log(event.target.value)
     }
     handleSubmit(event) {
         console.log('Current state is: ' + JSON.stringify(this.state));
         alert('Current state is: ' + JSON.stringify(this.state));
         event.preventDefault();
     }
+
+
     render() {
         return(
             <React.Fragment>
